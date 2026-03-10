@@ -331,7 +331,7 @@ public class GuiListener implements Listener {
 
         page = Math.min(Methods.getMaxPage(items), page);
 
-        Inventory inv = new AuctionMenu(54, Methods.color(config.getString("Settings.Cancelled/Expired-Items") + " #" + page), page).getInventory();
+        Inventory inv = new AuctionMenu(54, Methods.color(config.getString("Settings.Cancelled/Expired-Items") + page), page).getInventory();
 
         List<String> options = new ArrayList<>();
 
@@ -524,7 +524,7 @@ public class GuiListener implements Listener {
 
         page = Math.min(maxPage, page);
 
-        Inventory inv = new AuctionMenu(54, Methods.color(config.getString("Settings.GUIName") + " #" + page), page).getInventory();
+        Inventory inv = new AuctionMenu(54, Methods.color(config.getString("Settings.GUIName") + page), page).getInventory();
 
         List<String> options = new ArrayList<>();
 
